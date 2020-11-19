@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Montserrat;
+    background: #8AEDAC;
+    height: 120vh;
+}
+
+#contact {
+    width: 95%;
+    margin: 2rem auto;
+}
+
+.left-contact {
+    background: #F2F588;
+    width: 30%;
+    float: left;
+    min-height: 115vh;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.content {
+    padding: 6rem 6rem;
+}
+
+.content h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.content h5 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.right-contact {
+    background: #fff;
+    width: 70%;
+    float: left;
+    min-height: 115vh;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+form {
+    padding: 6rem 6rem;
+    margin: 0;
+    width: 80%;
+}
+
+label,
+input,
+textarea {
+    display: block;
+}
+
+label {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+}
+
+textarea {
+    height: 14rem;
+}
+
+button {
+    background: #4BE96F;
+    font-size: 2rem;
+    padding: 10px 40px;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1128px) {
+    .content {
+        padding: 6rem 4rem;
+    }
+
+    .content h2 {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .content h5 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .left-contact {
+        float: none;
+        width: 100%;
+        min-height: 20vh;
+        text-align: center;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    .right-contact {
+        float: none;
+        width: 100%;
+        min-height: 80vh;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-top-right-radius: 0;
+    }
+
+    form {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    form {
+        width: 100%;
+    }
+}
